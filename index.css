@@ -14,7 +14,7 @@ body {
     align-items: center;
     gap: 20px;
     background-color: hsl(257, 40%, 49%);
-    padding: 40px 80px;
+    padding: 50px 80px;
     background-image: url(./images/bg-desktop.svg);
     background-repeat: no-repeat;
 }
@@ -42,17 +42,18 @@ section .contain .right {
     align-items: center;
     justify-content: flex-start;
     color: #fff;
-    gap: 10px;
+    gap: 20px;
 }
 
 section .contain .right .text {
     font-size: 35px;
     font-weight: 800;
+    line-height: 1.6;
     font-family: 'Poppins', sans-serif;
 }
 
 section .contain .right p {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.5;
     color: #eee;
 }
