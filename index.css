@@ -5,7 +5,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .main .container {
@@ -23,6 +23,7 @@ header .contain {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-family: 'Poppins', sans-serif;
 }
 
 header .contain img {
@@ -46,14 +47,14 @@ section .contain .right {
 }
 
 section .contain .right .text {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 800;
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
 }
 
 section .contain .right p {
-    font-size: 17px;
+    font-size: 20px;
     line-height: 1.5;
     color: #eee;
 }
@@ -100,9 +101,34 @@ footer .contain .icons i {
     color: #fff;
     border-radius: 50%;
     transition: .3s;
+    position: relative;
+    transition: ease-in-out .3s;
 }
 
-footer .contain .icons i:hover {
+footer .contain .icons i::after {
+    content: "\f09a";
+    font-family: FontAwesome;
+    position: absolute;
+    font-weight: normal;
+    font-style: normal;
+    top: 50%;
+    transition: ease-in-out .3s;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+footer .contain .icons i:nth-child(2):after {
+    content: "\f099";
+}
+
+footer .contain .icons i:nth-child(3):after {
+    content: "\f16d";
+}
+
+footer .contain .icons i:hover,
+footer .contain .icons i:hover::after {
     cursor: pointer;
     color: hsl(300, 69%, 71%);
     border-color: hsl(300, 69%, 71%);
